@@ -7,6 +7,7 @@ const createCard = productItems => {
   return (
     <ProductCard
       key={productItems.id}
+      id={productItems.id}
       img={productItems.imgURL}
       item={productItems.item}
       price={productItems.price}

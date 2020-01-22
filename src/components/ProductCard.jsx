@@ -14,7 +14,9 @@ const ProductCard = props => {
             {props.price}
             {!props.isInStock ? " - Out of Stock" : null}
           </Card.Text>
-          <Button variant="primary">Add To Bakset</Button>
+          <Button variant="primary" href={`/products/${props.id}`}>
+            More Info
+          </Button>
         </Card.Body>
       </Card>
     </div>
