@@ -3,17 +3,8 @@ import { Container, Row } from "react-bootstrap";
 import ProductCard from "../components/ProductCard";
 import productItems from "../components/ProductItems";
 
-const createCard = productItems => {
-  return (
-    <ProductCard
-      key={productItems.id}
-      id={productItems.id}
-      img={productItems.imgURL}
-      item={productItems.item}
-      price={productItems.price}
-      isInStock={productItems.isInStock}
-    />
-  );
+const createCard = productItem => {
+  return <ProductCard key={productItem.id} product={productItem} />;
 };
 
 const Products = props => {

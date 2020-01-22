@@ -1,10 +1,8 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Table, Button, Card } from "react-bootstrap";
-import ProductItems from "./ProductItems";
-import { withRouter } from "react-router-dom";
 
-const productCardLarge = props => {
+const ProductCardLarge = ({ product }) => {
   return (
     <div>
       <Table>
@@ -17,14 +15,14 @@ const productCardLarge = props => {
                 alignItems: "center"
               }}
             >
-              <img src={props.imgUrl} alt=" Item" />
+              <img src={product.imgURL} alt=" Item" />
             </Card>
           </td>
           <td>
             <Card border="light" style={{ width: "25rem" }}>
               <Card.Body>
-                <Card.Title>{props.item}</Card.Title>
-                <Card.Text>{props.price}</Card.Text>
+                <Card.Title>{product.item}</Card.Title>
+                <Card.Text>{product.price}</Card.Text>
                 <Card.Text>Description</Card.Text>
                 <hr />
 
@@ -42,4 +40,4 @@ const productCardLarge = props => {
   );
 };
 
-export default withRouter(productCardLarge);
+export default ProductCardLarge;
