@@ -3,18 +3,20 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Card, Button } from "react-bootstrap";
 import { withRouter } from "react-router-dom";
 
-const ProductCard = props => {
+const ProductCard = ({ product }) => {
   return (
     <div>
       <Card style={{ width: "17rem" }}>
-        <Card.Img variant="top" src={props.img} />
+        <Card.Img variant="top" src={product.imgURL} />
         <Card.Body>
-          <Card.Title>{props.item}</Card.Title>
+          <Card.Title>{product.item}</Card.Title>
           <Card.Text>
-            {props.price}
-            {!props.isInStock ? " - Out of Stock" : null}
+            {product.price}
+            {!product.stock === 0 ? " - Out of Stock" : null}
           </Card.Text>
-          <Button variant="primary">Add To Bakset</Button>
+          <Button variant="primary" href={`/products/${product._id}`}>
+            More Info
+          </Button>
         </Card.Body>
       </Card>
     </div>
