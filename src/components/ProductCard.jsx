@@ -12,9 +12,9 @@ const ProductCard = ({ product }) => {
           <Card.Title>{product.item}</Card.Title>
           <Card.Text>
             {product.price}
-            {!product.isInStock ? " - Out of Stock" : null}
+            {!product.stock === 0 ? " - Out of Stock" : null}
           </Card.Text>
-          <Button variant="primary" href={`/products/${product.id}`}>
+          <Button variant="primary" href={`/products/${product._id}`}>
             More Info
           </Button>
         </Card.Body>

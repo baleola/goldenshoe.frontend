@@ -26,10 +26,7 @@ const ProductCardLarge = ({ product }) => {
                 <Card.Text>Description</Card.Text>
                 <hr />
 
-                <Card.Text>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </Card.Text>
+                <Card.Text>{product.description}</Card.Text>
                 <Button>Add To Basket</Button>
               </Card.Body>
             </Card>
