@@ -14,7 +14,6 @@ const Products = props => {
 
   const getProducts = async () => {
     let res = await productService.getAll();
-    console.log(res);
     setproducts(res);
   };
 
