@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row } from "react-bootstrap";
 import ProductCard from "../components/ProductCard";
-/* import productItems from "../components/ProductItems";*/
 import productService from "../components/services/productService";
-/*import productItems from "../components/ProductItems"; */
 
 const Products = props => {
   const [products, setproducts] = useState([]);
