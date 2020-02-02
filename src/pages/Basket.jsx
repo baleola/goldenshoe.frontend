@@ -21,7 +21,6 @@ const Basket = props => {
           <BasketItem />
           <BasketItem />
           <BasketItem />
-          <BasketItem />
         </div>
 
         <div>
