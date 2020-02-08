@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { withRouter, Redirect } from "react-router-dom";
 import { Container } from "react-bootstrap";
 import ProductCardLarge from "../components/LargeProductCard";
-import productService from "../components/services/productService";
+import productService from "../services/productService";
 
 const Product = props => {
   const productId = props.match.params.id;

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row } from "react-bootstrap";
 import ProductCard from "../components/ProductCard";
-import productService from "../components/services/productService";
+import productService from "../services/productService";
 
 const Products = props => {
   const [products, setproducts] = useState([]);

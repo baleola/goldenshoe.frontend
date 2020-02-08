@@ -1,9 +1,9 @@
 import React from "react";
-import NavigationBar from "./Nav";
-import Homepage from "../pages/Homepage";
-import Products from "../pages/Products";
-import Product from "../pages/Product";
-import Basket from "../pages/Basket";
+import NavigationBar from "./components/Nav";
+import Homepage from "./pages/Homepage";
+import Products from "./pages/Products";
+import Product from "./pages/Product";
+import Basket from "./pages/Basket";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {

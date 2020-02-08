@@ -1,5 +1,5 @@
 import React from "react";
-import "./index.css";
+import "../css/index.css";
 
 const HomepageImage = () => {
   return <div className="homepage-image" />;

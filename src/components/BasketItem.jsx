@@ -1,7 +1,7 @@
 import React from "react";
 import { Media } from "react-bootstrap";
 
-const BasketItem = ({ product }) => {
+const BasketItem = props => {
   return (
     <div>
       <div>
@@ -12,9 +12,9 @@ const BasketItem = ({ product }) => {
             alt="shoe-pic"
           />
           <Media.Body>
-            <h5>{product.item}</h5>
-            <p>{product.price}</p>
-            <p>QTY: 2</p>
+            <h5>All Over Logo Triple S</h5>
+            <p>£695.00</p>
+            <p>QTY: 1</p>
           </Media.Body>
         </Media>
       </div>
